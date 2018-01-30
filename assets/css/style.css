@@ -6,6 +6,10 @@ Author URI: http://themeforest.net/user/XpeedStudio/portfolio
 */
 /* ==========================================================================
    Author's custom styles
+   Base Color 
+   yellow - RGB Value - 253/199/41 - #fdc729
+    Teal blue - 2/181/186 - #02b5ba
+    Dark blue - 55/67/89 - #374359
    ========================================================================== */
 html,
 body {
@@ -121,13 +125,13 @@ input[type="color"],
 }
 .form-control {
     display: inline-block;
-    width: 16%;
+    width: 100%;
     height: 34px;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
     color: #555;
-    background-color: #fff;
+    background-color: #ccc;
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -342,7 +346,7 @@ Button
     margin-top: 30px;
 }
 .btn:hover {
-    background-color:rgba(228, 211, 0, 0.95);
+    background-color:#374359;
     color: #fff;
     text-decoration: none;
     border: 1px solid #fff;
@@ -350,7 +354,14 @@ Button
 
 .btn-primary {
     color: #fff;
-    background-color: #ffe13e;
+    background-color: #374359;
+    border-color: #fff;
+    transition: .6s;	
+}
+
+.btn-contact {
+    color: #fff;
+    background-color: #374359;
     border-color: #fff;
     transition: .6s;	
 }
@@ -498,7 +509,7 @@ input:-ms-input-placeholder {
 }
 
 .header_top_bar{
-    background: #202242;
+    background: #374359;
 }
 .menu-scroll .header_top_bar{
     transition: .6s;
@@ -535,10 +546,14 @@ input:-ms-input-placeholder {
     font-family: 'ralewaysemibold';
 }
 .navbar-brand>img {
-    max-width: 80%;
+    max-width: 68%;
+    
+
 }
 .navbar-brand {
     padding: 10px 15px;
+    margin-left: -65px !important;
+    margin-top: -30px;
 }
 
 /*call us*/
@@ -577,7 +592,7 @@ header_top_bar{
     margin: 0;
     border-radius: 0;
     margin-top: 0px;
-    background:##ffe13e;
+    background:#ffe13e;
 }
 .call_us_menu .call_us_bottom .phone_numbr a{
     font-size:1.5rem;
@@ -634,7 +649,7 @@ header_top_bar{
     min-width: 17.1875rem;
     height: 55px;
     background: #fff;
-    color: #202242;
+    color: #374359;
     padding: 10px;
     border: 0px;
     font-size: 0.875rem;
@@ -644,7 +659,7 @@ header_top_bar{
     max-width: 9.6875rem;
     height: 56px;
     background: #ffe13e;
-    color: #202242;
+    color: #374359;
     padding: 0px 15px;
     border: 0px;
     margin-left: -4px;
@@ -656,12 +671,12 @@ header_top_bar{
 }
 .form-control {
     display: inline-block;
-    width: 6.25rem;
+    width: 100%;
     height: 56px;
     padding: 10px;
     font-size: 0.875rem;
     color: #555;
-    background-color: #ffe13e;
+    background-color: #ccc;
     background-image: none;
     border: 0px solid #ccc;
     border-radius: 0px;
@@ -705,7 +720,7 @@ header_top_bar{
 }*/
 
 .main_slider_area{
-    padding: 250px 0px;
+    padding: 200px 0px 50px 0px;
     text-align: center;
 }
 
@@ -740,9 +755,9 @@ header_top_bar{
 }
 
 .main_webhost_service_area .single_webhost_left{
-    background: #202242;
-    padding-top:115px;
-    padding-bottom: 110px;
+    background: #374359;
+    padding: top 20px;
+    padding-bottom: 80px;
 
 }
 .main_webhost_service_area .single_webhost_left_img img{
@@ -792,11 +807,15 @@ header_top_bar{
     padding: 90px 0px 100px 0px;
     background: url(../images/featurebg.png) no-repeat center bottom;
 }
+.service-overlay{
+    padding: 90px 0px 0px 0px;
+}
+
 .feature .main_feature_content_area{
 
 }
 .feature .main_feature_content_area .heading_title{
-    margin-bottom:80px;
+    margin-bottom:0px;
 }
 .feature .main_feature_content_area .heading_title h2{
     font-family: 'ralewaybold';
@@ -852,7 +871,6 @@ header_top_bar{
 }
 .main_clients_bottom_content{
     overflow: hidden;
-    padding-bottom:110px; 
 }
 .main_clients_bottom_content .single_client_bottom{
     background: #faf9f9;
@@ -915,7 +933,8 @@ header_top_bar{
 
 /*contact us*/
 .contact{
-    background: #363855;
+    background: #f5f5f8;
+    padding: 5% 0%;
 }
 .main_contact .contactwithmap_content{
 
@@ -1024,5 +1043,12 @@ header_top_bar{
     margin-top: -7px;
     margin-left: -6px;
     text-decoration: none;
+}
 
+#feature i.fa {
+	font-size: 36px;
+	margin-right: 20px;
+	color: #374359;
+	padding-bottom: 10px;
+	display: block;
 }
