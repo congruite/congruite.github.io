@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+            width: 800px;
+        }
+
+        .box div  {
+            grid-column: span 4;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .cell3 {
+            grid-column: span 3 !important;
+        }
+
+        .cell12 {
+            grid-column: 1 /span 12 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Grid Elements</h1>
+
+    <p>A Grid Layout must have a parent element with the
+        <em>display</em> property set to
+        <em>grid</em> or
+        <em>inline-grid</em>.</p>
+
+    <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+    <div class="box">
+        <div >1</div>
+        <div >2</div>
+        <div >3</div>
+        <div >4</div>
+        <div >5</div>
+        <div class="cell12">6</div>
+        <div class="cell3">1</div>
+        <div class="cell3">2</div>
+        <div class="cell3">3</div>
+        <div class="cell3">4</div>
+        <div >5</div>
+        <div >6</div>
+        <div >6</div>
+    </div>
+
+</body>
+
+</html>
